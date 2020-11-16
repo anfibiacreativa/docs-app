@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DocsRoutingModule } from './docs-routing.module';
 import { DocsComponent } from './docs.component';
-import {ScullyLibModule} from '@scullyio/ng-lib';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [DocsComponent],
