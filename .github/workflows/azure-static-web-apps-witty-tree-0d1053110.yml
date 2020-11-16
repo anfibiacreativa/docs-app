@@ -31,7 +31,9 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "dist/static" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-          app_build_command: "ng build --prod && npm run scully -- --scanRoutes"  
+          app_build_command: "ng build --prod && npm run scully -- --scanRoutes"
+        env:
+          PRE_BUILD_COMMAND: './scripts/setup-puppeteer.sh'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
