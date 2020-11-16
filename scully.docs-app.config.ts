@@ -10,5 +10,8 @@ export const config: ScullyConfig = {
         folder: "./docs"
       }
     },
+  },
+   puppeteerLaunchOptions: {
+    args: ['--no-sandbox']
   }
 };
