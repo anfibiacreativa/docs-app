@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: Build Angular
-        id: Build Angular
+        id: BuildAngular
         run: npm run build -- --prod && npm run scully -- --scanRoutes
          
       - name: Build And Deploy
