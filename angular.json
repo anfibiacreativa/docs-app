@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "docs-app"
+    }
+  },
+  "defaultProject": "docs-app",
+  "cli": {
+    "analytics": false
+  }
 }
